@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Responsive</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js">
+
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">Travel</a>
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li><a href="#Home" class="active">Home</a></li>
+                    <li><a href="#OurProfile">Our Profile</a></li>
+                    <li><a href="#Achievement">Achievement</a></li>
+                    <li><a href="#MessageUs">Message Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="Home" class="home-section" style="background-image: url('assets/output-onlinepngtools.png');">
+        <div class="head">
+            <p id="welcome-text" style="font-size: 10; color: black;"> <b> Hello [Nama], Tempat Untukmu Yang Gabut</b>  </p>
+            <p><b>Welcome To Travel</b></p>
+            <div class="visi">
+                <p><b>Visi</b></p>
+                <p><b>Empower people through great Survival anytime, anyplace, and anywhere</b></p>
+            </div>
+            <div class="misi">
+                <p><b>Mission</b></p>
+                <p><b>To create a better everyday life for many people...</b></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="OurProfile">
+        <h3>Our Profile</h3>
+        <div class="facilitation">
+            <div class="profile-info">
+                <p>Berdiri Tahun 2024, Kami Travel Mengajak Anda Bagaimana Bertahan Hidup...</p>
+            </div>
+            <div class="images">
+                <div><img src="assets/jeep.jpg" alt="Jeep"><p>Best Travel</p></div>
+                <div><img src="assets/condition.jpeg" alt="Condition"><p>Top Weather Forecast</p></div>
+                <div><img src="assets/best teacher.png" alt="Best Teacher"><p>Survival Expert</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="MessageUs" class="message-section" style="background-image: url('assets/wallpapers.png');">
+        <h3 style="text-align: center;">Message Us</h3>
+        <div class="contact-form">
+            <form id="message-form">
+                <table>
+                    <tr>
+                        <td><label for="name">Nama:</label></td>
+                        <td><input type="text" id="name" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob">Tanggal Lahir:</label></td>
+                        <td><input type="date" id="dob" name="dob"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Jenis Kelamin:</label></td>
+                        <td>
+                            <input type="radio" id="male" name="gender" value="Laki-Laki">
+                            <label for="male">Laki-Laki</label>
+                            <input type="radio" id="female" name="gender" value="Perempuan">
+                            <label for="female">Perempuan</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="message">Pesan:</label></td>
+                        <td><textarea id="message" name="message"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <button type="button" onclick="submitForm()">Submit</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <div id="result">
+                <p id="submitted-time">Current time: </p>
+                <p id="submitted-name">Nama: </p>
+                <p id="submitted-dob">Tanggal Lahir: </p>
+                <p id="submitted-gender">Jenis Kelamin: </p>
+                <p id="submitted-message">Pesan: </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created By Aldi Kasakeyan</p>
+    </footer>
+
+</body>
+</html>
